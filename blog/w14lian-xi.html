@@ -321,35 +321,33 @@ init_mathjax();
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
 </script>
 
-<!-- 啟動 Brython -->
-
 <script>
 window.onload=function(){
 brython(1);
 }
 </script>
 
-<!-- 以下實際利用  Brython 畫圖 -->
-
-<div id="ex 1"></div>
+<div id ="ex1"></div>
 
 <script type="text/python3">
 from browser import document as doc
 container = doc['ex1']
-container <= "W14 练习"
+
+container<="W14練習"
 </script>
 
-<div id="ex 2"></div>
+<div id ="ex2"></div>
 
 <script type="text/python3">
 from browser import document as doc
+from browser import html
 container = doc['ex2']
-mystring = input("要印出什么字串?")
-mynum = input("要印几次?")
+mystring = input("要印出什麼字串?")
+mynum = input("要印幾次?")
 
-for i in range(10):
-     container <= "W14 练习-2"+html.BR()
-     container<=mystring + html.BR()
+for i in range(int(mynum)):
+    #container<="W14練習-2"+html.BR()
+    container<=mystring+html.BR()
 </script>
             </div>
             <!-- /.entry-content -->
