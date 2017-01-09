@@ -281,8 +281,9 @@ init_mathjax();
                 <h2><a href="../2016fallcp_hwqi-mo-kao-zhou.html">2016fallcp_hw期末考周</a></h2>
                 <div class="summary"><!-- 導入 Brython 標準程式庫 -->
 
-<p>W17週心得與程式範例:
-心得：学了这个程式 ，我有想学写更多的程式 觉得在未来程式可以帮我们
+<p>W17週心得與程式範例:</p>
+<p>W16週心得與程式範例:
+心得：学了这个程式 ，我有想学写更多的程式 觉得在未来程式可以帮我们很多 程式应该从中学就开始学起。
 <!-- 導入 Brython 標準程式庫 --></p>
 <script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
@@ -298,18 +299,18 @@ brython(1);
 
 <!-- 以下可以執行  Brython 程式 -->
 
-<canvas id="onebar" width="400" height="400"></canvas>
+<div id="id3"></div>
 
 <script type="text/python3">
 from browser import document
-from browser import window
-from browser import timer
-import math
-canvas = document["onebar"]
-ctx = canvas.getContext("2d")
+from browser import html
+import random
 
-# 取畫布的寬與高度
-width = canvas ...</script></!--></!--></!-->
+id3 = document["id3"]
+def guess(ev):
+    # 清除 id3 中的內容
+    id3.clear()
+    id3 ...</script></!--></!--></!-->
                     <a class="btn btn-default btn-xs" href="../2016fallcp_hwqi-mo-kao-zhou.html">more ...</a>
                 </div>
             </article>
